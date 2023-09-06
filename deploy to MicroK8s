@@ -7,3 +7,14 @@ microk8s ctr image import react-todo-app.tar
 
 # Create a Kubernetes deployment manifest 
 (e.g., deployment.yaml)
+
+# Apply the deployment
+microk8s kubectl apply -f deployment.yaml
+
+# Expose the deployment with a service
+(e.g., service.yaml)
+
+# Apply the deployment
+microk8s kubectl apply -f service.yaml
+
+
