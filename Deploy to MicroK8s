@@ -1,0 +1,9 @@
+# Install MicroK8s using the instructions from the provided link: https://microk8s.io/
+# Enable necessary add-ons:
+  microk8s enable dns storage
+
+# Load the Docker image into MicroK8s' Docker registry
+microk8s ctr image import react-todo-app.tar
+
+# Create a Kubernetes deployment manifest 
+(e.g., deployment.yaml)
